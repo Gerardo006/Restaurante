@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Gestión de Menús</title>
+    <script>
+        // Función para manejar la eliminación mediante AJAX
+        function eliminarElemento(url, type, id) {
+            if (confirm(`¿Estás seguro de que deseas eliminar este ${type}?`)) {
+                fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value,
+                        'Content-Type': 'application/json'
+                    }
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            document.getElementById(`${type}_row_${id}`).remove(); // Eliminar la fila del elemento
+                            alert(`${type.charAt(0).toUpperCase() + type.slice(1)} eliminado correctamente.`);
+                        } else {
+                            alert(`Error al intentar eliminar el ${type}.`);
+                        }
+                    });
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>Gestión de Menús, Categorías y Productos</h1>
+
+<!-- Token para peticiones POST (necesario para el fetch) -->
+{% csrf_token %}
+
+<!-- Listar todos los Menús -->
+<h2>Menús</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for menu in menus %}
+        <tr id="menu_row_{{ menu.id }}">
+            <td>{{ menu.id }}</td>
+            <td>{{ menu.nombre }}</td>
+            <td>{{ menu.estado|yesno:"Activo,Inactivo" }}</td>
+            <td>
+                <!-- Botón Editar -->
+                <a href="{% url 'gestionarmenus' %}?action=update&type=menu&id={{ menu.id }}">Editar</a>
+                <!-- Botón Eliminar con AJAX -->
+                <button onclick="eliminarElemento('{% url 'gestionarmenus' %}?action=delete&type=menu&id={{ menu.id }}', 'menu', '{{ menu.id }}')">Eliminar</button>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<!-- Botón para Crear un Menú -->
+<p><a href="{% url 'gestionarmenus' %}?action=create&type=menu">Crear Menú</a></p>
+
+<!-- Listar todas las Categorías -->
+<h2>Categorías</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Menú Asociado</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for categoria in categorias %}
+        <tr id="categoria_row_{{ categoria.id }}">
+            <td>{{ categoria.id }}</td>
+            <td>{{ categoria.nombre }}</td>
+            <td>{{ categoria.menu.nombre }}</td>
+            <td>
+                <!-- Botón Editar -->
+                <a href="{% url 'gestionarmenus' %}?action=update&type=categoria&id={{ categoria.id }}">Editar</a>
+                <!-- Botón Eliminar con AJAX -->
+                <button onclick="eliminarElemento('{% url 'gestionarmenus' %}?action=delete&type=categoria&id={{ categoria.id }}', 'categoria', '{{ categoria.id }}')">Eliminar</button>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<!-- Botón para Crear una Categoría -->
+<p><a href="{% url 'gestionarmenus' %}?action=create&type=categoria">Crear Categoría</a></p>
+
+<!-- Listar todos los Productos -->
+<h2>Productos</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Categoría Asociada</th>
+        <th>Disponibilidad</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for producto in productos %}
+        <tr id="producto_row_{{ producto.id }}">
+            <td>{{ producto.id }}</td>
+            <td>{{ producto.nombre }}</td>
+            <td>{{ producto.precio }}</td>
+            <td>{{ producto.categoria.nombre }}</td>
+            <td>{{ producto.disponibilidad|yesno:"Sí,No" }}</td>
+            <td>
+                <!-- Botón Editar -->
+                <a href="{% url 'gestionarmenus' %}?action=update&type=producto&id={{ producto.id }}">Editar</a>
+                <!-- Botón Eliminar con AJAX -->
+                <button onclick="eliminarElemento('{% url 'gestionarmenus' %}?action=delete&type=producto&id={{ producto.id }}', 'producto', '{{ producto.id }}')">Eliminar</button>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<!-- Botón para Crear un Producto -->
+<p><a href="{% url 'gestionarmenus' %}?action=create&type=producto">Crear Producto</a></p>
+
+<!-- Formulario dinámico para Crear/Editar -->
+{% if action %}
+    <h2>
+        {% if action == 'create' %}
+            Crear {{ type|capfirst }}
+        {% elif action == 'update' %}
+            Editar {{ type|capfirst }}
+        {% endif %}
+    </h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar</button>
+        <a href="{% url 'gestionarmenus' %}">Cancelar</a>
+    </form>
+{% endif %}
+ <nav>
+        <a href="{% url 'menus' %}">crear producto menu, categoria, producto</a>
+ </nav>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Mesas</title>
+    <style>
+        /* Ocultamos inicialmente los formularios */
+        .form-container {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .form-container.active {
+            display: block; /* Mostramos el formulario cuando tiene la clase 'active' */
+        }
+    </style>
+</head>
+<body>
+<h1>Listado de Mesas</h1>
+
+<!-- Mensaje de éxito si se realizó la reserva -->
+{% if success_message %}
+    <div class="alert alert-success">
+        {{ success_message }}
+    </div>
+{% endif %}
+
+<ul>
+    {% for mesa in mesas %}
+        <li>
+            <strong>Identificador:</strong> {{ mesa.identificador }}<br>
+            <strong>Ubicación:</strong> {{ mesa.ubicacion }}<br>
+            <strong>Número de Asientos:</strong> {{ mesa.numero_asientos }}
+            <br>
+
+            <!-- Botón para mostrar/cargar el formulario -->
+            <button onclick="mostrarFormulario({{ mesa.id }}, '{{ mesa.identificador }}')">Reservar</button>
+
+            <!-- Botón para ir al menú -->
+            <a href="{% url 'menuvista' %}" class="back-btn">Menús</a>
+
+            <!-- Formulario para reservar la mesa (ocultado por defecto) -->
+            <div id="form-container-{{ mesa.id }}" class="form-container">
+                <form method="POST">
+                    {% csrf_token %}
+                    <!-- Mostrar el nombre dinámico de la mesa -->
+                    <p><strong>Mesa:</strong> {{ mesa.identificador }}</p>
+
+                    <!-- Campo oculto que envía el identificador de la mesa -->
+                    <input type="hidden" name="mesa_id" value="{{ mesa.id }}">
+
+                    <!-- Renderiza los campos del formulario -->
+                    {{ form.as_p }}
+
+                    <!-- Botones de confirmación y cancelar -->
+                    <button type="submit">Confirmar Reserva</button>
+                    <button type="button" onclick="ocultarFormulario({{ mesa.id }})">Cancelar</button>
+                </form>
+            </div>
+        </li>
+    {% empty %}
+        <li>No hay mesas disponibles.</li>
+    {% endfor %}
+</ul>
+
+<script>
+    /**
+     * Muestra el formulario de la mesa seleccionada
+     */
+    function mostrarFormulario(mesaId) {
+        // Ocultamos todos los formularios activos
+        document.querySelectorAll('.form-container').forEach((form) => {
+            form.classList.remove('active');
+        });
+
+        // Mostramos el formulario específico de la mesa
+        const formulario = document.getElementById('form-container-' + mesaId);
+        formulario.classList.add('active');
+    }
+
+    /**
+     * Ocultar el formulario de reserva de una mesa específica
+     */
+    function ocultarFormulario(mesaId) {
+        const formulario = document.getElementById('form-container-' + mesaId);
+        formulario.classList.remove('active');
+    }
+</script>
+</body>
+</html>

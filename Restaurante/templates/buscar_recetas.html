@@ -1,0 +1,18 @@
+<form method="get" action="{% url 'buscar_recetas' %}">
+    <input type="text" name="query" placeholder="Buscar recetas..." value="{{ query }}">
+    <button type="submit">Buscar</button>
+</form>
+
+<h2>Resultados:</h2>
+<ul>
+    {% for receta in recetas %}
+        <li>
+            <h3>{{ receta.name }}</h3>
+            <img src="{{ receta.imageUrl }}" alt="{{ receta.name }}" style="width:150px;">
+            <p>{{ receta.description }}</p>
+            <a href="{% url 'detalle_receta' receta.id %}">Ver más detalles</a>
+        </li>
+    {% empty %}
+        <p>No se encontraron resultados para "{{ query }}".</p>
+    {% endfor %}
+</ul>

@@ -1,0 +1,11 @@
+<h1>{{ receta.name }}</h1>
+<img src="{{ receta.imageUrl }}" alt="{{ receta.name }}" style="width:300px;">
+<p><strong>Tiempo de preparación:</strong> {{ receta.prepTime }}</p>
+<p><strong>Ingredientes:</strong></p>
+<ul>
+    {% for ingrediente in receta.ingredients %}
+        <li>{{ ingrediente }}</li>
+    {% endfor %}
+</ul>
+<p>{{ receta.description }}</p>
+<a href="{% url 'buscar_recetas' %}">Volver a buscar</a>

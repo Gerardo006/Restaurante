@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Mesa y Reserva</title>
+    <link rel="stylesheet" href="{% static 'css/mesas.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Crear Mesas </h1>
+    </header>
+
+    <a href="#" class="back-button">Regresar</a>
+
+    <div class="hero">
+        <div class="forms-container">
+            <form method="POST" class="form">
+                {% csrf_token %}
+                <h3>Crear Mesa</h3>
+                {{ mesa_form.as_p }}
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+
+        <div class="image-container">
+            <img src="{% static 'images/mesa1.png' %}" alt="Restaurante">
+        </div>
+    </div>
+</body>
+</html>

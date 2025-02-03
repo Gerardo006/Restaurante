@@ -1,0 +1,155 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("./images/banner.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #ffffff;
+            position: relative; /* Necesario para posicionar el botón de regresar */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            background: rgba(37, 27, 27, 0);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 20px;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            color: #9c0816;
+            text-shadow:1px 1px 2px rgb(0, 255, 247);
+            font-size: 2em;
+        }
+
+        h2 {
+            color: #9c0816;
+            border-bottom: 2px solid rgba(255, 255, 255, 0);
+            padding-bottom: 10px;
+            font-size: 4em;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: rgba(37, 27, 27, 0.6);
+            border-radius: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: rgb(255, 0, 21);
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgb(255, 255, 255);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        li:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px 0;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: rgba(37, 27, 27, 0);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Estilos para los campos de formulario */
+        .form-container input,
+        .form-container textarea,
+        .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #aa1515;
+            border-radius: 30px;
+            background-color: rgb(255, 255, 255);
+            color: #150b08;
+            font-size: 1em;
+        }
+
+        .form-container input:focus,
+        .form-container textarea:focus,
+        .form-container select:focus {
+            border-color: #ff0015;
+            outline: none;
+        }
+
+        button {
+            background: rgba(255, 0, 21, 0.64);
+            color: #ffffff;
+            border: none;
+            padding: 15px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: rgba(96, 4, 4, 0.69);
+        }
+
+        .header {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: rgba(21, 11, 8, 0.63);
+            border-radius: 100px;
+            box-shadow: 0 4px 10px rgb(255, 0, 21);
+            position: relative; /* Necesario para posicionar el botón de regresar */
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        /* Estilos para el botón de regresar */
+        .back-btn {
+            background: rgba(255, 0, 21, 0.32);
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+            position: absolute; /* Posiciona el botón en una esquina */
+            top: 90px; /* Distancia desde la parte superior */
+            right: 100px; /* Distancia desde la derecha */
+        }
+
+        .back-btn:hover {
+            background-color: rgb(156, 8, 22);
+        }

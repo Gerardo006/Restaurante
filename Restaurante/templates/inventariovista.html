@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventario</title>
+</head>
+<body>
+<h1>Inventario General</h1>
+
+<!-- Mensajes de éxito o error -->
+{% if messages %}
+    {% for message in messages %}
+        <p style="color: {% if message.tags == 'success' %}green{% else %}red{% endif %};">
+            {{ message }}
+        </p>
+    {% endfor %}
+{% endif %}
+
+<!-- Botones para generar reportes -->
+<form method="post" style="margin-bottom: 20px;">
+    {% csrf_token %}
+    <button type="submit" name="generar_reporte" value="consumo">Generar Reporte de Consumo</button>
+    <button type="submit" name="generar_reporte" value="inventario">Generar Reporte de Inventario</button>
+</form>
+
+<table border="1" cellpadding="10">
+    <thead>
+    <tr>
+        <th>Categoría</th>
+        <th>Descripción</th>
+        <th>Insumos</th>
+        <th>Stock</th>
+        <th>Acción</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for categoria in categorias_con_insumos %}
+        <tr>
+            <td rowspan="{{ categoria.insumo_set.all|length|add:1 }}">{{ categoria.nombre }}</td>
+            <td rowspan="{{ categoria.insumo_set.all|length|add:1 }}">{{ categoria.descripcion }}</td>
+        </tr>
+        {% for insumo in categoria.insumo_set.all %}
+            <tr>
+                <td>{{ insumo.nombre }}</td>
+                <td>{{ insumo.stock }}</td>
+                <td>
+                    <form method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="insumo_id" value="{{ insumo.id }}">
+                        <input type="number" name="cantidad_usar" min="1" max="{{ insumo.stock }}" placeholder="Cantidad">
+                        <button type="submit">Usar</button>
+                    </form>
+                </td>
+            </tr>
+        {% empty %}
+            <tr>
+                <td colspan="5">No hay insumos en esta categoría.</td>
+            </tr>
+        {% endfor %}
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
