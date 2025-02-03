@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="429d19ab-8854-42d2-b4f1-b8235bfe7d62" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../DjangoProject/gestionsuper/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Farmacia/sistema/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Farmacia/sistema/migrations/0002_remove_venta_pedido.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Farmacia/sistema/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estadisticas/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estadisticas/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facturacion/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facturacion/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventario/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventario/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menus/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menus/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesas/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesas/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pedidos/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pedidos/migrations/0002_pedido_producto.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pedidos/migrations/__init__.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2sGybbCFFqy3pvNIwlfdBI9fYOg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.Restaurante.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/Documents/Repositorios/Restaurante/Restaurante/static/css/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Documents\Repositorios\Restaurante\Restaurante\static\css\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Documents\Repositorios\Restaurante\mesas" />
+      <recent name="C:\Users\USER\Documents\Repositorios\Restaurante\menus" />
+      <recent name="C:\Users\USER\Documents\Repositorios\Restaurante\Restaurante\static\css\images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Restaurante" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Restaurante" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Restaurante.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.180" />
+        <option value="bundled-python-sdk-85c76a3b01b3-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.180" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="429d19ab-8854-42d2-b4f1-b8235bfe7d62" name="Changes" comment="" />
+      <created>1738096278860</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738096278860</updated>
+      <workItem from="1738096279981" duration="12581000" />
+      <workItem from="1738109988612" duration="3173000" />
+      <workItem from="1738113671952" duration="10288000" />
+      <workItem from="1738187494680" duration="14744000" />
+      <workItem from="1738279218270" duration="4130000" />
+      <workItem from="1738284564056" duration="6545000" />
+      <workItem from="1738328702540" duration="7575000" />
+      <workItem from="1738354661557" duration="12861000" />
+      <workItem from="1738426433620" duration="299000" />
+      <workItem from="1738426763127" duration="379000" />
+      <workItem from="1738427405422" duration="6000" />
+      <workItem from="1738433032954" duration="944000" />
+      <workItem from="1738434012662" duration="20875000" />
+      <workItem from="1738461014969" duration="587000" />
+      <workItem from="1738461623588" duration="17630000" />
+      <workItem from="1738517131039" duration="34774000" />
+      <workItem from="1738558262829" duration="287000" />
+      <workItem from="1738586137061" duration="589000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
