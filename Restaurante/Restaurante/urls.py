@@ -23,7 +23,7 @@ from menus import views as menus_views
 from inventario import views as inventario_views
 from mesas.views import ubicacion
 from pedidos import views
-
+from mesas.views import enviar_mensaje_api
 urlpatterns = [
     path('admin/', admin.site.urls),
 
@@ -51,6 +51,10 @@ urlpatterns = [
 
     path('ubicacion/', mesas_views.ubicacion, name='ubicacion'),
 
-    path('panel/', mesas_views.paneladmin, name='paneladmin')
+    path('panel/', mesas_views.paneladmin, name='paneladmin'),
+
+path('api/enviar/', enviar_mensaje_api, name='enviar_mensaje_api'),
+
+
 
 ]

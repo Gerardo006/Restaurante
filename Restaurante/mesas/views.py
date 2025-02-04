@@ -4,6 +4,7 @@ from pyexpat.errors import messages
 
 from .models import Mesa, Reserva
 from .forms import MesaForm, ReservaForm
+from .services import consumir_api_claude3
 
 
 def home(request):
@@ -135,3 +136,11 @@ def ubicacion(request):
 def paneladmin(request):
     return render(request, 'paneladmin.html')
 
+def enviar_mensaje_api(request):
+    if request.method == "POST":
+        mensaje = request.POST.get("mensaje")  # Obtener el mensaje desde un formulario
+        respuesta = consumir_api_claude3(mensaje)  # Llamar a la API
+        return render(request, "respuesta.html", {"respuesta": respuesta})
+
+    # En otros casos, simplemente renderiza el formulario
+    return render(request, "formulario.html")

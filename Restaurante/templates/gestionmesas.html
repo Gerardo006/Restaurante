@@ -3,8 +3,8 @@
 <link rel="stylesheet" href="{% static 'css/gestionmesas.css' %}">
 <h1>Gestión de Mesas y Reservas</h1>
 <div class="botones-superior-derecha">
-    <a href="crearmesas.html">Crear Mesas</a>
-    <a href="paneladmin.html">Regresar</a>
+     <a href="{% url 'crearmesas' %}" class="back-button">Crear Mesas</a>
+     <a href="{% url 'paneladmin' %}" class="back-button">Regresar</a>
 </div>
 <h2>Mesas</h2>
 <table>
