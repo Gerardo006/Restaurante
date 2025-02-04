@@ -1,0 +1,130 @@
+      body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            background-image: url('./images/banner.jpg'); /* Imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            position: relative;
+            margin-bottom: 20px;
+            color: #fff; /* Texto del título en blanco para resaltar en el fondo */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Efecto de sombra */
+        }
+
+        .top-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .top-buttons a {
+            background-color: #ff6347;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .top-buttons a:hover {
+            background-color: #e5533d;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente en tablas */
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #444;
+            color: #fff; /* Cabeceras visibles */
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: rgba(200, 200, 200, 0.6); /* Alternando colores claros */
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.8); /* Alternando colores claros */
+        }
+
+        .success-message {
+            color: #600404; /* Verde para mensajes exitosos */
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        .error-message {
+            color: #dc3545; /* Rojo para mensajes de error */
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        button, .btn-report {
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin: 5px 0;
+        }
+
+        button {
+            background-color: rgba(255, 0, 21, 0.75);
+        }
+
+        button:hover {
+            background-color: #320505;
+        }
+
+        .btn-report {
+            background-color: rgba(255, 0, 21, 0.7);
+        }
+
+        .btn-report:hover {
+            background-color: #320505;
+        }
+
+        .btn-warning {
+            background-color: rgba(255, 0, 21, 0.78);
+            color: #ffffff;
+        }
+
+        .btn-warning:hover {
+            background-color: rgba(255, 0, 21, 0.7);
+        }
+
+        input[type="number"] {
+            width: 60px;
+            padding: 5px;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        form {
+            display: inline;
+        }

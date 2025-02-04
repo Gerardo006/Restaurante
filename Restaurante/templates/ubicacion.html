@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Cómo llegar con Google Maps</title>
+<link rel="stylesheet" href="{% static 'css/ubicacion.css' %}">
+</head>
+<body>
+<!-- Título principal con más detalles -->
+<h1>Cómo llegar a nuestro Restaurante</h1>
+<h2>Explora la ruta para llegar fácilmente a nuestro local</h2>
+
+<div class="container">
+    <!-- Sección del mapa -->
+    <div id="map"></div>
+
+    <!-- Sección de la imagen -->
+    <div class="image-container">
+        <!-- Imagen proporcionada desde el directorio estático -->
+        <img src="{% static 'images/resubi.png' %}" alt="Imagen del destino">
+    </div>
+</div>
+
+<a href="{% url 'home' %}" class="back-button">Regresar</a>
+
+<script>
+    // Inicializa el mapa y la funcionalidad de "Cómo llegar"
+    function initMap() {
+        // Destino del marcador (coordenadas específicas)
+        const destination = { lat: -3.9896388, lng: -79.2093571 };
+
+        // Crea el mapa centrado en el destino inicialmente
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 20,
+            center: destination,
+        });
+
+        // Añade marcador para el destino
+        new google.maps.Marker({
+            position: destination,
+            map: map,
+            title: "Destino",
+        });
+
+        // Intenta obtener la ubicación actual del usuario
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const currentLocation = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude,
+                    };
+
+                    // Renderiza la ruta usando DirectionsService
+                    const directionsService = new google.maps.DirectionsService();
+                    const directionsRenderer = new google.maps.DirectionsRenderer({
+                        map: map,
+                    });
+
+                    // Calcula y muestra la ruta
+                    directionsService.route(
+                        {
+                            origin: currentLocation,
+                            destination: destination,
+                            travelMode: google.maps.TravelMode.DRIVING,
+                        },
+                        (response, status) => {
+                            if (status === "OK") {
+                                // Muestra la ruta en el mapa
+                                directionsRenderer.setDirections(response);
+                            } else {
+                                console.error("Error al obtener la ruta. Estado:", status);
+                            }
+                        }
+                    );
+                },
+                (error) => {
+                    console.error("Error al obtener la ubicación actual:", error);
+                }
+            );
+        } else {
+            console.error("Geolocalización no soportada por el navegador.");
+        }
+    }
+</script>
+
+<!-- Script de la API de Google Maps -->
+<script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQk4jy87DNg25r3Z_fNXBXQxQZXVHrNxg&callback=initMap">
+</script>
+</body>
+</html>

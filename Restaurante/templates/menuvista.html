@@ -1,0 +1,45 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Menús Disponibles</title>
+    <link rel="stylesheet" href="{% static 'css/menuvista.css' %}">
+</head>
+<body>
+<h1>Menús Disponibles</h1>
+
+<div class="admin-actions">
+    <a href="{% url 'realizarpedido' %}"> Crear</a>
+    <a href="{% url 'home' %}"> Regresar</a>
+</div>
+
+<div class="menu-grid">
+    {% for menu_item in menuestructura %}
+        <div class="menu-item">
+            <h2>{{ menu_item.nombre }}</h2>
+            <ul>
+                {% for categoria_item in menu_item.categorias %}
+                    <li>
+                        <h3>{{ categoria_item.nombre }}</h3>
+                        <ul>
+                            {% for producto in categoria_item.productos %}
+                                <li class="producto">
+                                    <strong>{{ producto.nombre }}</strong> - ${{ producto.precio }}
+                                    <p>{{ producto.descripcion }}</p>
+                                    <form method="post" action="{% url 'realizarpedido' %}">
+                                        {% csrf_token %}
+                                        <input type="hidden" name="producto_nombre" value="{{ producto.nombre }}">
+                                        <button type="submit">Pedir este producto</button>
+                                    </form>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+</div>
+</body>
+</html>

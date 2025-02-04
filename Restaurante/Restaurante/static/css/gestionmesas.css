@@ -1,0 +1,102 @@
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('./images/8.png');
+        background-size: cover;
+        background-position: center;
+        color: #333;
+    }
+    h1, h2 {
+        text-align: center;
+        color: #150b08;
+        margin-bottom: 20px;
+    }
+    table {
+        margin: auto;
+        width: 90%;
+        border-collapse: collapse;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    th, td {
+        padding: 12px 15px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+    th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+    }
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+    a {
+        text-decoration: none;
+        padding: 8px 12px;
+        margin: 0 5px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    a[href*='update'] {
+        background-color: rgba(255, 0, 21, 0.8);
+        color: white;
+    }
+    a[href*='update']:hover {
+        background-color: rgba(50, 5, 5, 0.77);
+    }
+    a[href*='delete'] {
+        background-color: #f44336;
+        color: white;
+    }
+    a[href*='delete']:hover {
+        background-color: #e53935;
+    }
+    button {
+        background-color: rgba(255, 0, 21, 0.66);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    button:hover {
+        background-color: rgba(96, 4, 4, 0.52);
+    }
+    form a {
+        padding: 8px 15px;
+        color: #fff;
+        background-color: rgba(255, 0, 21, 0.76);
+        border-radius: 4px;
+    }
+    form a:hover {
+        background-color: rgba(50, 5, 5, 0.58);
+    }
+
+    .botones-superior-derecha {
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde la parte derecha */
+    display: flex;
+    gap: 10px; /* Espaciado entre los botones */
+}
+
+.botones-superior-derecha a,
+.botones-superior-derecha button {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: rgba(255, 0, 21, 0.76); /* Color de fondo */
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botones-superior-derecha a:hover,
+.botones-superior-derecha button:hover {
+    background-color: rgba(150, 0, 0, 0.76); /* Color al pasar el cursor */
+}

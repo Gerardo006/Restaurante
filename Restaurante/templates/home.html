@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es-Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Board</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <header>
+        <h1>SISTEMA GESTION RESTAURANTE</h1>
+    </header>
+    <nav>
+        <a href="{% url 'realizarpedido' %}">Pedido</a>
+        <a href="{% url 'menuvista' %}">Pedir Menu</a>
+        <a href="{% url 'listarmesas' %}">Reservar Mesa</a>
+        <a href="{% url 'ubicacion' %}">Ubicanos</a>
+    </nav>
+    <div class="hero">
+        <div class="hero-content">
+            <header>
+                <h2>Menu Board</h2>
+            </header>
+
+            <p>MenuBoard es un sistema de gestión de restaurantes diseñado para facilitar la administración de restaurantes, cafeterías o cualquier establecimiento de alimentos y bebidas.
+                La aplicación permite crear, modificar y gestionar menús de manera eficiente, proporcionando a los usuarios una interfaz sencilla para realizar actualizaciones rápidas, gestionar categorías de platos.</p>
+
+        </div>
+        <div class="forms-container">
+            <div class="form">
+                <h3>Iniciar Sesión</h3>
+                <form method="post">
+                    {% csrf_token %}
+                    <label>
+                        <input type="text" name="username" placeholder="Nombre" required>
+                    </label>
+                    <label>
+                        <input type="password" name="password" placeholder="Contraseña" required>
+                    </label>
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+                {% if messages %}
+                    <div class="messages">
+                        {% for message in messages %}
+                            <p>{{ message }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 MENU BOARD. Todos los derechos Reservados.</p>
+        <p>CREADO POR: </p>
+    </footer>
+</body>
+</html>

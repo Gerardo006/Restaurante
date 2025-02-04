@@ -1,0 +1,124 @@
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url('./images/fondoubi.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        /* Oscurecimiento del fondo para hacer el texto más legible */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        /* Título principal */
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 3rem;
+            margin: 20px 0 10px;
+            text-shadow: 2px 2px 4px rgb(255, 0, 21);
+        }
+
+        /* Subtítulo */
+        h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 0px 0 30px;
+            color: #f0f0f0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Contenedor principal para la estructura */
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(21, 11, 8, 0.6); /* Fondo semitransparente */
+            padding: 50px;
+            border-radius: 40px;
+            box-shadow: 1px 4px 8px rgba(255, 255, 255, 0.4);
+            width: 80%; /* Ancho máximo del contenedor */
+            margin:20px auto;
+            gap: 50px; /* Espacio adecuado entre mapa e imagen */
+        }
+
+        /* Define el estilo del contenedor del mapa */
+        #map {
+            height: 500px; /* Altura fija */
+            width: 50%; /* Ocupa el 60% del ancho del contenedor */
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+
+        /* Define el estilo de la imagen */
+        .image-container {
+            width: 50%; /* Ocupa el 40% del ancho del contenedor */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            max-width: 100%; /* La imagen no excede el tamaño del contenedor */
+            height: auto; /* Mantiene las proporciones */
+            border-radius: 8px;
+            box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Apila los elementos verticalmente */
+            }
+
+            #map, .image-container {
+                width: 100%; /* Elementos ocupan el ancho total del contenedor */
+            }
+
+            .image-container img {
+                max-height: 300px; /* Imagen con altura máxima en pantallas pequeñas */
+            }
+        }
+
+                /* Botón estilizado */
+          /* Botón estilizado */
+        .back-button {
+            position: absolute; /* Posición absoluta para moverlo dentro de la página */
+            top: 90px; /* Separación desde arriba */
+            right: 140px; /* Separación desde la derecha */
+            padding: 10px 20px;
+            background-color: #ff5722;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.3);
+            transition: 0.3s ease;
+            z-index: 1000; /* Asegura que el botón estará por encima de otros elementos */
+        }
+
+        .back-button:hover {
+            background-color: #e64a19;
+            color: #fff;
+            transform: scale(1.05); /* Efecto de zoom */
+            box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.3);
+        }

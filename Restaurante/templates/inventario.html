@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Inventario</title>
+    <link rel="stylesheet" href="{% static 'css/inventario.css' %}">
+</head>
+<body>
+    <div class="header">
+        <h1>Reporte de Inventario</h1>
+        <a href="{% url 'paneladmin' %}" class="back-btn">Regresar</a>
+    </div>
+    <div class="container">
+        <!-- Categorías (Izquierda) -->
+        <section>
+            <div class="form-container">
+                <h3>Agregar Categoría</h3>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ categoria_form.as_p }}
+                    <button class="submit-btn" type="submit" name="crear_categoria">Crear</button>
+                </form>
+            </div>
+            <ul>
+                {% for categoria in categorias %}
+                    <li>
+                        {{ categoria.nombre }}
+                        <form method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="categoria_id" value="{{ categoria.id }}">
+                            <button type="submit" name="eliminar_categoria">Eliminar</button>
+                        </form>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <!-- Insumos (Centro) -->
+        <section>
+            <div class="form-container">
+                <h3>Agregar Insumo</h3>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ insumo_form.as_p }}
+                    <button class="submit-btn" type="submit" name="crear_insumo">Crear</button>
+                </form>
+            </div>
+            <ul>
+                {% for insumo in insumos %}
+                    <li>
+                        {{ insumo.nombre }} - Stock: {{ insumo.stock }}
+                        <form method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="insumo_id" value="{{ insumo.id }}">
+                            <button type="submit" name="eliminar_insumo">Eliminar</button>
+                        </form>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <!-- Movimiento de Inventarios (Derecha) -->
+        <section>
+            <div class="form-container">
+                <h3>Registrar Movimiento</h3>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ movimiento_form.as_p }}
+                    <button class="submit-btn" type="submit" name="crear_movimiento">Registrar</button>
+                </form>
+            </div>
+            <ul>
+                {% for movimiento in movimientos %}
+                    <li>
+                        {{ movimiento.tipo }} - Producto: {{ movimiento.producto }} - Cantidad: {{ movimiento.cantidad }}
+                        <form method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="movimiento_id" value="{{ movimiento.id }}">
+                            <button type="submit" name="eliminar_movimiento">Eliminar</button>
+                        </form>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
+
+

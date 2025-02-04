@@ -1,0 +1,148 @@
+
+body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('./images/banner.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: linear-gradient(90deg, rgba(21, 11, 8, 0.36), rgba(172, 9, 9, 0.27));
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            font-family: 'Verdana', sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(68, 68, 68, 0.95);
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-top: 2px solid #ff6347;
+            border-bottom: 2px solid #ff6347;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            border-top: 2px solid #ff6347;
+            border-bottom: 2px solid #ff6347;
+        }
+        nav a:hover {
+            background-color: #ff6347;
+            color: #fff;
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .hero {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #ffffff;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+
+        }
+        .hero-content {
+            max-width: 45%;
+            margin-left: 40px;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin: 40px 0;
+        }
+        .hero button {
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+        }
+        .hero button:hover {
+            background-color: #ff4500;
+            transform: scale(1.1);
+        }
+        .forms-container {
+            display: flex;
+            justify-content: space-between;
+            width: 45%;
+            gap: 20px;
+        }
+        .form {
+            background-color: rgba(68, 68, 68, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 58%;
+            color: #fff;
+        }
+        .form h3 {
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #ff6347;
+        }
+        .form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #ff6347;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            background-color: #333;
+            color: #fff;
+        }
+        .form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .form button:hover {
+            background-color: #ff4500;
+
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.1rem;
+        }

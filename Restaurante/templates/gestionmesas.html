@@ -1,0 +1,69 @@
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/gestionmesas.css' %}">
+<h1>Gestión de Mesas y Reservas</h1>
+<div class="botones-superior-derecha">
+    <a href="crearmesas.html">Crear Mesas</a>
+    <a href="paneladmin.html">Regresar</a>
+</div>
+<h2>Mesas</h2>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Ubicacion</th>
+        <th>Capacidad</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for mesa in mesas %}
+        <tr>
+            <td>{{ mesa.identificador }}</td>
+            <td>{{ mesa.ubicacion }}</td>
+            <td>{{ mesa.numero_asientos }}</td>
+            <td>
+                <a href="?action=update&type=mesa&id={{ mesa.id }}">Editar</a>
+                <a href="?action=delete&type=mesa&id={{ mesa.identificador }}" onclick="return confirm('¿Está seguro de eliminar esta mesa?');">Eliminar</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<h2>Reservas</h2>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Mesa</th>
+        <th>Fecha</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for reserva in reservas %}
+        <tr>
+            <td>{{ reserva.identificador }}</td>
+            <td>{{ reserva.mesa.identificador }}</td>
+            <td>{{ reserva.fecha }}</td>
+            <td>
+                <a href="?action=update&type=reserva&id={{ reserva.id }}">Editar</a>
+                <a href="?action=delete&type=reserva&id={{ reserva.id }}" onclick="return confirm('¿Está seguro de eliminar esta reserva?');">Eliminar</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+{% if form %}
+    <h3>{% if objeto %}Editar{% else %}Crear{% endif %} {{ type|capfirst }}</h3>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar</button>
+        <a href="{% url 'gestionmesas' %}">Cancelar</a>
+
+    </form>
+
+{% endif %}

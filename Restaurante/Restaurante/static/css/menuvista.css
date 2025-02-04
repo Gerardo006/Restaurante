@@ -1,0 +1,114 @@
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #150b08;
+            background: url('./images/comidaECU.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        h1 {
+            text-align: center;
+            background-color: rgba(21, 11, 8, 0.65); /* Color de fondo con transparencia */
+            color: white;
+            padding: 15px 0;
+            margin: 0;
+            position: relative;
+        }
+        .admin-actions {
+            position: absolute;
+            top: 65px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        .admin-actions a {
+            background-color: rgba(255, 0, 21, 0.71);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        .admin-actions a:hover {
+            background-color: rgba(50, 5, 5, 0.76);
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0); /* Fondo semitransparente */
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(255, 255, 255, 0);
+        }
+        .menu-item {
+            background-color: rgba(255, 255, 255, 0.68);
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .menu-item:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            margin: 0;
+            color: #150b08;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .menu-item ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        .menu-item h3 {
+            font-size: 1.1rem;
+            margin-top: 15px;
+            color: #150b08;
+        }
+        .producto {
+            padding: 8px;
+            border-left: 4px solid rgba(255, 0, 21, 0.82);
+            margin: 5px 0;
+        }
+        button {
+            background-color: rgba(255, 0, 21, 0.6);
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            text-transform: uppercase;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgba(50, 5, 5, 0.56);
+        }
+        @media (max-width: 768px) {
+            .menu-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .admin-actions {
+                top: 85px;
+                right: 10px;
+            }
+        }
+        @media (max-width: 500px) {
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+            .admin-actions {
+                flex-direction: column;
+                top: 85px;
+                right: 10px;
+                align-items: flex-end;
+            }
+            .admin-actions a {
+                width: 100%;
+                text-align: center;
+            }
+        }
