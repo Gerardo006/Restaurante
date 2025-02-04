@@ -102,7 +102,7 @@ Inventario General: Resumen de los recursos del restaurante para una mejor plani
 
 Realización de pedidos: Función destinada a los meseros para registrar pedidos de los clientes.
 
-#Conclusión
+# Conclusión
 
 Este sistema de gestión de restaurante facilita la administración y operación del negocio mediante una plataforma web intuitiva y eficiente. La implementación de Django junto con HTML y CSS permite una experiencia interactiva y dinámica tanto para clientes como para administradores.
 
