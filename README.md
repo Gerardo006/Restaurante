@@ -7,7 +7,7 @@ Miguel Veintimilla
 Ariana Cordova
 Cristhian Davila
 Gerardo Naula
-Camila Chimbo
+
 
 ![image](https://github.com/user-attachments/assets/d348ee09-1257-4a91-923f-2888c2429647)
 
