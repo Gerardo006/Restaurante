@@ -40,14 +40,6 @@ Se tiene implementado el uso de botones los cuales sirven para que el usuario re
 ![image](https://github.com/user-attachments/assets/46d088bc-7a99-401a-b04e-7ce079afc05f)
 
 
-# Ubicación API:
-
-![image](https://github.com/user-attachments/assets/e2b7015e-99fd-4000-bf6f-fc49c1998523)
-
-# API Cloude:
-
-![image](https://github.com/user-attachments/assets/5ab62e54-3189-4e7b-8a92-cbaa96fc3ead)
-
 
 
 Continuando, tenemos lo que login o inicio de sesión, el cual solamente pueden acceder los que tengan permisos específicos ya que lleva a la parte administrativa del restaurante.
