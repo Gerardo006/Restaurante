@@ -8,7 +8,7 @@ La base de datos seleccionada para nuestro proyecto fue SQLite.
 
 SQLite es un sistema de gestión de bases de datos (DBMS) ligero y autónomo que utiliza un archivo único para almacenar toda la base de datos. Se basa en el lenguaje SQL y es una de las bases de datos más utilizadas en aplicaciones móviles, software de escritorio y sistemas embebidos debido a su simplicidad y eficiencia.
 
-### ¿Por qué elegimos MySQL?
+### ¿Por qué elegimos SQLite?
 
 
 SQLite es una excelente opción de base de datos para una aplicación en Django debido a su ligereza, facilidad de uso y configuración. Es un sistema de bases de datos relacional de código abierto que no requiere un servidor, ya que almacena los datos en un solo archivo. Su integración con Django es nativa, lo que permite un desarrollo rápido sin configuraciones adicionales. En resumen, ofrece simplicidad, eficiencia en aplicaciones pequeñas y medianas, y es ideal para entornos de desarrollo o proyectos con bajos requerimientos de concurrencia.
