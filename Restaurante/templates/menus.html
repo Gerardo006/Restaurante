@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Menús</title>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+</head>
+<body>
+<div class="container">
+    <a href="{% url 'home' %}" class="back-button">Regresar</a>
+    <h1>Gestión de Menús</h1>
+
+    <!-- Formulario de Menús (Izquierda) -->
+    <div class="form-container">
+        <h2>Menús</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ menu_form.as_p }}
+        </form>
+    </div>
+
+    <!-- Formulario de Categorías (Centro) -->
+    <div class="form-container">
+        <h2>Categorías</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ categoria_form.as_p }}
+
+        </form>
+    </div>
+
+    <!-- Formulario de Productos (Derecha) -->
+    <div class="form-container">
+        <h2>Productos</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ producto_form.as_p }}
+
+        </form>
+    </div>
+</div>
+</body>
+</html>

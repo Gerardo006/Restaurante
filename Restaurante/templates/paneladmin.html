@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="{% static 'css/paneladmin.css' %}">
+</head>
+<body>
+<header>
+    <h1>Panel de Administración</h1>
+</header>
+
+<div class="main-content">
+    <!-- Primer conjunto de botones (4 botones superiores) -->
+    <div class="button-container">
+        <a href="{% url 'crearmesas' %}">
+            <img src="{% static 'images/1.png' %}" alt="Crear Mesas">
+            Crear Mesas
+        </a>
+        <a href="{% url 'gestionarmenus' %}">
+            <img src="{% static 'images/5.png' %}" alt="Gestionar Menús">
+            Gestionar Menús
+        </a>
+        <a href="{% url 'gestionmesas' %}">
+            <img src="{% static 'images/1.png' %}" alt="Gestionar Mesas">
+            Gestionar Mesas y Reservas
+        </a>
+        <a href="{% url 'gestionpedidos' %}">
+            <img src="{% static 'images/1 (1).png' %}" alt="Gestionar Pedidos">
+            Gestionar Pedidos
+        </a>
+    </div>
+
+    <!-- Segundo conjunto de botones (4 botones inferiores) -->
+    <div class="button-container">
+        <a href="{% url 'inventario' %}">
+            <img src="{% static 'images/4.png' %}" alt="Inventario">
+            Inventario
+        </a>
+        <a href="{% url 'inventariovista' %}">
+            <img src="{% static 'images/4.png' %}" alt="Inventariovista">
+            Inventario Gestion
+        </a>
+        <a href="{% url 'menus' %}">
+            <img src="{% static 'images/5.png' %}" alt="Menús">
+            Menús
+        </a>
+        <a href="{% url 'realizarpedido' %}">
+            <img src="{% static 'images/3.png' %}" alt="Realizar Pedido">
+            Realizar Pedido
+        </a>
+    </div>
+</div>
+
+<!-- Botón de regreso -->
+<a href="{% url 'home' %}" class="back-button">Regresar</a>
+</body>
+</html>

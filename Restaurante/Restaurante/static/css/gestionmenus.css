@@ -1,0 +1,96 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('./images/banner.jpg') no-repeat center center fixed; /* Imagen de fondo */
+            background-size: cover; /* Ajusta la imagen al tamaño completo */
+            color: #ffffff; /* Texto blanco para legibilidad */
+        }
+        h1 {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+            color: #fff;
+            padding: 20px 0;
+            margin: 0;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+        h2 {
+            color: rgb(255, 255, 255); /* Color destacado para subtítulos */
+            text-align: center;
+            margin-top: 30px;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: rgba(0, 0, 0, 0.06); /* Fondo semitransparente */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.09); /* Sombra para resaltar la tabla */
+            border-radius: 10px;
+        }
+        table th, table td {
+            border: 1px solid rgb(255, 255, 255); /* Bordes suaves */
+            padding: 10px;
+            text-align: center;
+            font-size: 1rem;
+        }
+        table th {
+            background-color: rgba(50, 5, 5, 0.27); /* Fondo más oscuro para encabezados */
+            color: #9c0816; /* Color destacado para encabezados */
+            text-transform: uppercase;
+        }
+        table td {
+            color: #ffffff;
+        }
+        table tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.18); /* Fondo alternado para filas pares */
+        }
+        a, button {
+            background-color: rgba(255, 0, 21, 0.64);
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        a:hover, button:hover {
+            background-color: rgba(50, 5, 5, 0.62); /* Cambio de color para hover */
+        }
+        button {
+            margin: 0 auto;
+            display: inline-block;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.99); /* Fondo oscuro para formulario */
+            margin: 20px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        form h2 {
+            color: rgba(255, 0, 21, 0.57); /* Color destacado */
+            text-align: center;
+        }
+        form button, form a {
+            margin-top: 10px;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+        nav {
+            text-align: center;
+            margin: 30px 0;
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }

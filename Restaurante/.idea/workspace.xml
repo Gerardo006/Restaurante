@@ -20,7 +20,6 @@
       <change afterPath="$PROJECT_DIR$/mesas/migrations/0001_initial.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mesas/migrations/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pedidos/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pedidos/migrations/0002_pedido_producto.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pedidos/migrations/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="Python Script" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -77,7 +76,6 @@
       <recent name="C:\Users\USER\Documents\Repositorios\Restaurante\Restaurante\static\css\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\USER\Documents\Repositorios\Restaurante\mesas" />
       <recent name="C:\Users\USER\Documents\Repositorios\Restaurante\menus" />
       <recent name="C:\Users\USER\Documents\Repositorios\Restaurante\Restaurante\static\css\images" />
     </key>
@@ -135,14 +133,6 @@
       <workItem from="1738354661557" duration="12861000" />
       <workItem from="1738426433620" duration="299000" />
       <workItem from="1738426763127" duration="379000" />
-      <workItem from="1738427405422" duration="6000" />
-      <workItem from="1738433032954" duration="944000" />
-      <workItem from="1738434012662" duration="20875000" />
-      <workItem from="1738461014969" duration="587000" />
-      <workItem from="1738461623588" duration="17630000" />
-      <workItem from="1738517131039" duration="34774000" />
-      <workItem from="1738558262829" duration="287000" />
-      <workItem from="1738586137061" duration="589000" />
     </task>
     <servers />
   </component>

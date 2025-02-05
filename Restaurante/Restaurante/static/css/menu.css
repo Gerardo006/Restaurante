@@ -1,0 +1,87 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('./images/blog_bg.jpg'); /* Imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ocupa toda la altura de la pantalla */
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /* Tres columnas iguales */
+            gap: 20px; /* Espacio entre columnas */
+            width: 100%;
+            max-width: 1500px; /* Ancho máximo del contenedor */
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0); /* Fondo semi-transparente */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            grid-column: 1 / -1; /* Ocupa todas las columnas */
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px rgb(12, 40, 83);
+        }
+        h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-top: 0;
+            color: #9c0816;
+            text-shadow: 1px 1px 2px rgb(0, 255, 247);
+        }
+        .form-container {
+            background-color: rgba(37, 27, 27, 0.68);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgb(96, 4, 4);
+        }
+        .form-container label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-container input, .form-container select, .form-container textarea {
+            width: 90%;
+            padding: 15px;
+            border: 1px solid #aa1515;
+            border-radius: 50px;
+        }
+        .form-container button {
+            width: 95%;
+            padding: 15px;
+            font-size: 16px;
+            background-color: rgba(255, 0, 21, 0.22);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .form-container button:hover {
+            background-color: #150b08;
+        }
+        .back-button {
+            position: absolute; /* Posición absoluta para colocarlo fuera del flujo normal */
+            top: 75px; /* Distancia desde la parte superior */
+            left: 105px; /* Distancia desde la izquierda */
+            background-color: rgba(255, 0, 21, 0.32); /* Color gris para el botón */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none; /* Elimina el subrayado del enlace */
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: rgba(21, 11, 8, 0.36); /* Color gris más oscuro al pasar el mouse */
+        }

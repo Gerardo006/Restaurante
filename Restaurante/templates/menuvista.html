@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Menús Disponibles</title>
+</head>
+<body>
+<h1>Menús</h1>
+
+<ul>
+    {% for menu_item in menuestructura %}
+        <li>
+            <strong>{{ menu_item.nombre }}</strong>
+            <ul>
+                {% for categoria_item in menu_item.categorias %}
+                    <li>
+                        <strong>{{ categoria_item.nombre }}</strong>
+                        <ul>
+                            {% for producto in categoria_item.productos %}
+                                <li>
+                                    <strong>{{ producto.nombre }}</strong> - ${{ producto.precio }}
+                                    <p>{{ producto.descripcion }}</p>
+                                    <small>Disponibilidad: {{ producto.disponibilidad|yesno:"Sí,No" }}</small>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+</ul>
+
+{% if is_admin %}
+    <p><a href="{% url 'menus' %}">Gestionar Menús, Categorías y Productos</a></p>
+{% endif %}
+
+</body>
+</html>

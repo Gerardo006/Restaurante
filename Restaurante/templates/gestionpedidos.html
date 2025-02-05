@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Pedidos</title>
+   <link rel="stylesheet" href="{% static 'css/gestionpedidos.css' %}">
+</head>
+<body>
+<div class="header">
+    <h1>Gestión de Pedidos</h1>
+    <!-- Botones en la esquina superior derecha -->
+    <div class="header-buttons">
+        <a href="{% url 'paneladmin' %}">Regresar</a>
+        <a href="{% url 'realizarpedido' %}">Realizar Pedido</a>
+    </div>
+</div>
+
+<!-- Formulario de edición (si se seleccionó un pedido a editar) -->
+{% if pedido_a_editar %}
+    <div class="form-container">
+        <h2>Editar Pedido</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" name="editar">Guardar Cambios</button>
+        </form>
+    </div>
+{% endif %}
+
+<!-- Tabla con la lista de pedidos -->
+<h2>Lista de Pedidos</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Identificador</th>
+        <th>Nombre Cliente</th>
+        <th>Nombre Producto</th>
+        <th>Fecha</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for pedido in pedidos %}
+        <tr>
+            <td>{{ pedido.identificador }}</td>
+            <td>{{ pedido.nombre_cliente }}</td>
+            <td>{{ pedido.producto.nombre }}</td>
+            <td>{{ pedido.creado_en|date:"d/m/Y H:i" }}</td>
+            <td>
+                <a href="?editar={{ pedido.id }}">Editar</a>
+                <form method="post" style="display:inline;">
+                    {% csrf_token %}
+                    <input type="hidden" name="pedido_identificador" value="{{ pedido.identificador }}">
+                    <button type="submit" name="eliminar">Eliminar</button>
+                </form>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<!-- Botón para generar un informe CSV -->
+<div class="csv-form-container">
+    <form method="get">
+        <button type="submit" name="informe_csv">Generar Informe CSV</button>
+    </form>
+</div>
+</body>
+</html>

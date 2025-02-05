@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d09bdfcd-f679-4afa-b8f5-db68b875ac54" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Restaurante/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/.idea/Restaurante.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Captura de pantalla 2025-02-02 222418.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Captura de pantalla 2025-02-02 222430.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/css/images/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/css/images/blog_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/css/images/mesa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/css/images/pedidos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/css/inventario.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/css/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/css/mesas.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/css/pedidosrea.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/about-inset.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/about-main.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/blog_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/coffee.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/featured-image-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/featured-image-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/featured-image-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/featured-image-04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/food.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/footer_background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/full-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/gallery_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/gallery_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/gallery_03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/gallery_04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/gallery_05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/gallery_06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/gallery_07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/gallery_08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/gallery_09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/gallery_10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/loader-animation.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/menu-item-thumbnail-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/menu-item-thumbnail-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/menu-item-thumbnail-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/menu-item-thumbnail-04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/menu-item-thumbnail-05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/menu-item-thumbnail-06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/menu-item-thumbnail-07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/menu-item-thumbnail-08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/menu-item-thumbnail-09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/menu-item-thumbnail-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/mesa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/mesa1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/newsletter-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/pedidos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/special-menu-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/special-menu-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/special-menu-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/special_menu_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/staff-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/staff-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/staff-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/store.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/images/team_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/js/all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/static/js/modernizer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/Restaurante/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/estadisticas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/estadisticas/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/estadisticas/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/estadisticas/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/estadisticas/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/estadisticas/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/estadisticas/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/estadisticas/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/facturacion/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/facturacion/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/facturacion/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/facturacion/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/facturacion/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/facturacion/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/facturacion/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/facturacion/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/inventario/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/inventario/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/inventario/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/inventario/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/inventario/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/inventario/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/inventario/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/inventario/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/inventario/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/menus/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/menus/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/menus/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/menus/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/menus/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/menus/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/menus/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/menus/services.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/menus/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/menus/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/mesas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/mesas/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/mesas/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/mesas/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/mesas/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/mesas/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/mesas/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/mesas/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/mesas/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/pedidos/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/pedidos/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/pedidos/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/pedidos/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/pedidos/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/pedidos/migrations/0002_pedido_producto.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/pedidos/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/pedidos/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/pedidos/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/pedidos/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/templates/buscar_recetas.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/templates/crearmesas.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/templates/detalle_receta.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/templates/gestionarmenus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/templates/gestionmesas.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/templates/gestionpedidos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/templates/inventario.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/templates/inventariovista.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/templates/listarmesas.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/templates/menus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/templates/menuvista.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurante/templates/realizarpedido.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Gerardo006&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Gerardo006/Restaurante.git&quot;,
+    &quot;accountId&quot;: &quot;80b598c7-7f0b-4686-afa9-cb8df42d8da6&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2sX4uRTzSNLJvP6wNrfqZrflsP9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Django Server.Restaurante.MenuBoard.executor": "Run",
+    "Python.urls.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/USER/Documents/Repositorios/Restaurante.MenuBoard/Restaurante",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Restaurante.MenuBoard" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Restaurante.MenuBoard" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.180" />
+        <option value="bundled-python-sdk-85c76a3b01b3-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.180" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d09bdfcd-f679-4afa-b8f5-db68b875ac54" name="Changes" comment="" />
+      <created>1738588808298</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738588808298</updated>
+      <workItem from="1738588809565" duration="202000" />
+      <workItem from="1738589583863" duration="36000" />
+      <workItem from="1738589634216" duration="125000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

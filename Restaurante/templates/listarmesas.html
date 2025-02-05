@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Mesas</title>
+    <link rel="stylesheet" href="{% static 'css/listarmesas.css' %}">
+</head>
+<body>
+<a href="{% url 'home' %}" class="back-button">Regresar</a> <!-- Botón de regresar -->
+
+<h1>Listado de Mesas</h1>
+
+<!-- Mensaje de éxito si se realizó la reserva -->
+{% if success_message %}
+    <div class="alert alert-success">
+        {{ success_message }}
+    </div>
+{% endif %}
+
+<div class="mesas-container">
+    {% for mesa in mesas %}
+        <div class="mesa-card">
+            <strong>Identificador:</strong> {{ mesa.identificador }}<br>
+            <p><strong>Ubicación:</strong> {{ mesa.ubicacion }}</p>
+            <p><strong>Número de Asientos:</strong> {{ mesa.numero_asientos }}</p>
+
+            <!-- Botón para mostrar el formulario de reserva -->
+            <button onclick="mostrarFormulario({{ mesa.id }})">Reservar</button>
+
+            <!-- Botón para ir al menú -->
+            <a href="{% url 'menuvista' %}">Ver Menús</a>
+        </div>
+    {% empty %}
+        <p>No hay mesas disponibles.</p>
+    {% endfor %}
+</div>
+
+<!-- Overlay y formulario de reserva -->
+<div id="form-overlay" class="form-overlay">
+    <div class="form-container">
+        <h2>Reservar Mesa</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <p><strong>Mesa:</strong> <span id="mesa-identificador"></span></p>
+
+            <!-- Campo oculto que envía el identificador de la mesa -->
+            <input type="hidden" name="mesa_id" id="mesa-id">
+
+            <!-- Renderiza los campos del formulario -->
+            {{ form.as_p }}
+
+            <!-- Botones de confirmación y cancelar -->
+            <button type="submit">Confirmar Reserva</button>
+            <button type="button" onclick="ocultarFormulario()">Cancelar</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    /**
+     * Muestra el formulario de reserva en el centro de la pantalla
+     */
+    function mostrarFormulario(mesaId) {
+        // Obtén los datos de la mesa
+        const mesaCard = document.querySelector(`.mesa-card button[onclick="mostrarFormulario(${mesaId})"]`).parentElement;
+        const mesaIdentificador = mesaCard.querySelector('strong').nextSibling.textContent.trim();
+
+        // Actualiza el formulario con los datos de la mesa
+        document.getElementById('mesa-identificador').textContent = mesaIdentificador;
+        document.getElementById('mesa-id').value = mesaId;
+
+        // Muestra el overlay y el formulario
+        document.getElementById('form-overlay').classList.add('active');
+    }
+
+    /**
+     * Oculta el formulario de reserva
+     */
+    function ocultarFormulario() {
+        document.getElementById('form-overlay').classList.remove('active');
+    }
+</script>
+</body>
+</html>
