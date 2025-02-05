@@ -27,6 +27,8 @@ Como se puede observar en la siguiente imagen:
 
 # Modulo de Mesas y Reservaciones:
 
+Restaurante/pedidos
+
 Restaurante/mesas
 
 Este módulo administra la disponibilidad y el uso de las mesas en el restaurante. Cada mesa puede tener distintos estados, como disponible, ocupada o reservada. Los clientes pueden realizar reservas indicando la fecha y hora, además de identificar cada mesa según su número de asientos y ubicación dentro del establecimiento. Al recibir a un cliente, se le puede asignar una mesa, la cual deberá ser liberada una vez finalizado su uso para permitir su reutilización. Tanto los clientes como el personal del restaurante pueden modificar o cancelar las reservas según sea necesario. Este módulo mantiene una interacción directa con el usuario.
@@ -36,7 +38,7 @@ Este módulo administra la disponibilidad y el uso de las mesas en el restaurant
 
 # Modulo de Pedidos:
 
-Restaurante/pedidos
+Restaurante(./pedidos/)
 
 El módulo de pedidos facilita la administración de las órdenes de los clientes, desde su registro hasta su entrega y pago. Cada orden puede incluir uno o varios productos del menú, con la opción de añadir o retirar artículos mientras no haya sido procesada. Además, el sistema permite ajustar las cantidades de los productos dentro del pedido y actualizar su estado en tiempo real. Este módulo mantiene una interacción constante con el usuario.
 
