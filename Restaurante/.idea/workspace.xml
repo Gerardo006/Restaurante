@@ -7,7 +7,8 @@
     <list default="true" id="429d19ab-8854-42d2-b4f1-b8235bfe7d62" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/paneladmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/paneladmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/realizarpedido.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/realizarpedido.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
     &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
     &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/Documents/POO/Parqueadero&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/Documents/Repositorios/Restaurante.MenuBoard/Restaurante/templates&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -72,6 +73,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Documents\Repositorios\Restaurante.MenuBoard\Restaurante\templates" />
+      <recent name="C:\Users\USER\Documents\Repositorios\Restaurante.MenuBoard\Restaurante\mesas" />
       <recent name="C:\Users\USER\Documents\Repositorios\Restaurante.MenuBoard\Restaurante\Restaurante\static\css\images" />
       <recent name="C:\Users\USER\Documents\Repositorios\Restaurante\Restaurante\static\css\images" />
     </key>
@@ -151,6 +154,8 @@
       <workItem from="1738686810715" duration="337000" />
       <workItem from="1738687350016" duration="1633000" />
       <workItem from="1738692521642" duration="234000" />
+      <workItem from="1738696196617" duration="5274000" />
+      <workItem from="1738717461427" duration="1611000" />
     </task>
     <servers />
   </component>
