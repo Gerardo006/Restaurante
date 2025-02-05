@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="429d19ab-8854-42d2-b4f1-b8235bfe7d62" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/paneladmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/paneladmin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/realizarpedido.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/realizarpedido.html" afterDir="false" />
-    </list>
+    <list default="true" id="429d19ab-8854-42d2-b4f1-b8235bfe7d62" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
