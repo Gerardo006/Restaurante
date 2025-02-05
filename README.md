@@ -1,5 +1,6 @@
-# Restaurante
-Gestion de restaurantes
+# MENU BOARD
+
+# GESTION DE RESTAURANTE
 
 # INTEGRANTES: 
 
@@ -22,7 +23,7 @@ Como se puede observar en la siguiente imagen:
 ![image](https://github.com/user-attachments/assets/d348ee09-1257-4a91-923f-2888c2429647)
 
 
-Modulos:
+# MODULOS:
 
 
 # Modulo de Mesas y Reservaciones:
