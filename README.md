@@ -1,100 +1,78 @@
 # Restaurante
 Gestion de restaurantes
 
-INTEGRANTES: 
+# INTEGRANTES: 
 
-Miguel Veintimilla
-Ariana Cordova
-Cristhian Davila
-Gerardo Naula
-
+* Miguel Veintimilla
+* Ariana Cordova
+* Cristhian Davila
+* Gerardo Naula
 
 
 # Documentación del Proyecto de Restaurante (GUI)
 
+
 # Introducción
 
-Este proyecto consiste en el desarrollo de una interfaz web para la gestión de un restaurante. La interfaz permite a los usuarios interactuar con el software mediante navegadores web, utilizando tecnologías como HTML, CSS y Django. Se han implementado diversas funcionalidades clave para la administración eficiente del restaurante.
+Este documento describe el proceso de diseño e implementación de la interfaz de usuario (UI) para un sistema de gestión de restaurantes. La interfaz fue diseñada para ser intuitiva, eficiente y fácil de usar, permitiendo a los usuarios gestionar menús, pedidos, reservas y empleados de manera efectiva.
 
 Como se puede observar en la siguiente imagen:
+
 
 ![image](https://github.com/user-attachments/assets/d348ee09-1257-4a91-923f-2888c2429647)
 
 
-Se tiene implementado el uso de botones los cuales sirven para que el usuario realice las siguientes cosas:
+Modulos:
 
 
-# Pedido:
+# Modulo de Mesas y Reservaciones:
 
-![image](https://github.com/user-attachments/assets/4be6293a-1960-4d7e-9fa0-9d36171227b3)
+Este módulo administra la disponibilidad y el uso de las mesas en el restaurante. Cada mesa puede tener distintos estados, como disponible, ocupada o reservada. Los clientes pueden realizar reservas indicando la fecha y hora, además de identificar cada mesa según su número de asientos y ubicación dentro del establecimiento. Al recibir a un cliente, se le puede asignar una mesa, la cual deberá ser liberada una vez finalizado su uso para permitir su reutilización. Tanto los clientes como el personal del restaurante pueden modificar o cancelar las reservas según sea necesario. Este módulo mantiene una interacción directa con el usuario.
 
-
-
-# Pedir Menu:
-
-![image](https://github.com/user-attachments/assets/6ec7295d-624e-482b-9fc6-abcd35bc625e)
+![image](https://github.com/user-attachments/assets/3441fb9b-dec0-465a-8b14-4b0c75635994)
 
 
-# Reserva Mesa:
+# Modulo de Pedidos:
 
-![image](https://github.com/user-attachments/assets/46d088bc-7a99-401a-b04e-7ce079afc05f)
-
-
+El módulo de pedidos facilita la administración de las órdenes de los clientes, desde su registro hasta su entrega y pago. Cada orden puede incluir uno o varios productos del menú, con la opción de añadir o retirar artículos mientras no haya sido procesada. Además, el sistema permite ajustar las cantidades de los productos dentro del pedido y actualizar su estado en tiempo real. Este módulo mantiene una interacción constante con el usuario.
 
 
-Continuando, tenemos lo que login o inicio de sesión, el cual solamente pueden acceder los que tengan permisos específicos ya que lleva a la parte administrativa del restaurante.
+![image](https://github.com/user-attachments/assets/dccf55e2-80ea-4c86-bb74-302cb8bdffa0)
 
 
 
-De los cuales en el Panel de Administracion se obversa:
+# Modulo de Menu y Productos:
+
+Este módulo administra los platos y productos disponibles en el restaurante. Cada artículo cuenta con características como nombre, descripción, categoría, precio y estado de disponibilidad. El menú se estructura por categorías, y el sistema permite incorporar nuevos productos, editar los existentes o eliminarlos según sea necesario.
 
 
-El crear mesas en caso implementar una nueva mesa en el restaurante. 
+![image](https://github.com/user-attachments/assets/c7a11c1e-4cc0-432e-acaa-d78ee6998451)
 
 
-# Gestión de menús.
+# Modulo de Inventario.
 
 
-# Gestión de mesas y reservaciones:
+El módulo de inventario facilita la administración de los insumos y productos esenciales para la elaboración de los platillos del restaurante. Cada insumo se encuentra registrado con su nombre, cantidad disponible y unidad de medida. El sistema permite registrar nuevas entradas y controlar las salidas de insumos, además de generar alertas cuando los niveles sean bajos o se agoten. Su acceso está restringido únicamente al administrador
 
 
-# Gestion de pedidos:
+![image](https://github.com/user-attachments/assets/e856f9c6-f77c-4fd4-aaf8-b1a1e0b63260)
 
-# Funcionalidad Implementada
 
-# Interfaz de Usuario
+# Modulo de Informes y Estadistica:
 
-La interfaz cuenta con botones que permiten al usuario realizar diversas acciones, entre ellas:
+Este módulo proporciona información sobre el rendimiento del restaurante mediante reportes y estadísticas presentadas en gráficos interactivos y archivos PDF. Los datos incluyen los productos más vendidos, la mesa con mayor uso, el desempeño del personal y las ventas totales. La información se genera con base en un rango de fechas definido por el administrador.
 
-Realizar pedidos: Acceso a la carta del restaurante para seleccionar y solicitar platillos.
 
-Consultar el menú: Visualización de los platillos disponibles con sus respectivas descripciones y precios.
+![image](https://github.com/user-attachments/assets/db5fbbc8-f2ab-40b3-8a1b-ea14325d2516)
 
-Reservar una mesa: Permite a los clientes hacer una reservación para garantizar disponibilidad.
 
-Consultar ubicación: Proporciona información sobre la ubicación física del restaurante.
+# Modulo de Facturacion:
 
-# Inicio de Sesión y Panel Administrativo
+Este módulo permite la emisión de facturas, calculando automáticamente el total del pedido, incluyendo impuestos y descuentos, además de registrar el método de pago utilizado. También almacena un historial de todas las facturas generadas. El acceso a este módulo está restringido exclusivamente al administrador.
 
-El sistema incluye un mecanismo de autenticación que restringe el acceso a ciertas secciones solo a usuarios con permisos específicos. Esto es fundamental para la administración del restaurante.
 
-Dentro del Panel de Administración, se encuentran las siguientes secciones:
+# Conclusión:
 
-Creación de mesas: Permite agregar nuevas mesas en caso de expansión del restaurante.
+Al realizar este proyecto obtuvimos una experiencia entendedora que nos permitió aplicar y consolidar los conocimientos adquiridos a lo largo de la tercera unidad. Aprendimos la importancia de una planificación cuidadosa, la necesidad de pruebas rigurosas y cómo resolver problemas inesperados durante el desarrollo. La integración de múltiples componentes como la interfaz, API externa fue un desafío, pero también una oportunidad para mejorar nuestras habilidades técnicas y de resolución de problemas.
 
-Gestión de menús: Facilita la actualización de los platillos disponibles en el menú.
-
-Gestión de mesas y reservaciones: Control de disponibilidad y organización de mesas.
-
-Gestión de pedidos: Administración de los pedidos realizados por los clientes.
-
-Inventario: Control de los productos disponibles en el restaurante.
-
-Inventario General: Resumen de los recursos del restaurante para una mejor planificación.
-
-Realización de pedidos: Función destinada a los meseros para registrar pedidos de los clientes.
-
-# Conclusión
-
-Este sistema de gestión de restaurante facilita la administración y operación del negocio mediante una plataforma web intuitiva y eficiente. La implementación de Django junto con HTML y CSS permite una experiencia interactiva y dinámica tanto para clientes como para administradores.
 
