@@ -27,9 +27,6 @@ Como se puede observar en la siguiente imagen:
 
 # Modulo de Mesas y Reservaciones:
 
-Restaurante/pedidos
-
-Restaurante/mesas
 
 Este módulo administra la disponibilidad y el uso de las mesas en el restaurante. Cada mesa puede tener distintos estados, como disponible, ocupada o reservada. Los clientes pueden realizar reservas indicando la fecha y hora, además de identificar cada mesa según su número de asientos y ubicación dentro del establecimiento. Al recibir a un cliente, se le puede asignar una mesa, la cual deberá ser liberada una vez finalizado su uso para permitir su reutilización. Tanto los clientes como el personal del restaurante pueden modificar o cancelar las reservas según sea necesario. Este módulo mantiene una interacción directa con el usuario.
 
@@ -38,7 +35,7 @@ Este módulo administra la disponibilidad y el uso de las mesas en el restaurant
 
 # Modulo de Pedidos:
 
-Restaurante(./pedidos/)
+
 
 El módulo de pedidos facilita la administración de las órdenes de los clientes, desde su registro hasta su entrega y pago. Cada orden puede incluir uno o varios productos del menú, con la opción de añadir o retirar artículos mientras no haya sido procesada. Además, el sistema permite ajustar las cantidades de los productos dentro del pedido y actualizar su estado en tiempo real. Este módulo mantiene una interacción constante con el usuario.
 
@@ -49,7 +46,7 @@ El módulo de pedidos facilita la administración de las órdenes de los cliente
 
 # Modulo de Menu y Productos:
 
-Restaurante/menús
+
 
 Este módulo administra los platos y productos disponibles en el restaurante. Cada artículo cuenta con características como nombre, descripción, categoría, precio y estado de disponibilidad. El menú se estructura por categorías, y el sistema permite incorporar nuevos productos, editar los existentes o eliminarlos según sea necesario.
 
@@ -59,7 +56,7 @@ Este módulo administra los platos y productos disponibles en el restaurante. Ca
 
 # Modulo de Inventario.
 
-Restaurante/inventario
+
 
 El módulo de inventario facilita la administración de los insumos y productos esenciales para la elaboración de los platillos del restaurante. Cada insumo se encuentra registrado con su nombre, cantidad disponible y unidad de medida. El sistema permite registrar nuevas entradas y controlar las salidas de insumos, además de generar alertas cuando los niveles sean bajos o se agoten. Su acceso está restringido únicamente al administrador
 
@@ -69,7 +66,7 @@ El módulo de inventario facilita la administración de los insumos y productos 
 
 # Modulo de Informes y Estadistica:
 
-Restaurante/estadísticas
+
 
 Este módulo proporciona información sobre el rendimiento del restaurante mediante reportes y estadísticas presentadas en gráficos interactivos y archivos PDF. Los datos incluyen los productos más vendidos, la mesa con mayor uso, el desempeño del personal y las ventas totales. La información se genera con base en un rango de fechas definido por el administrador.
 
@@ -79,7 +76,7 @@ Este módulo proporciona información sobre el rendimiento del restaurante media
 
 # Modulo de Facturacion:
 
-Restaurante/Facturación
+
 
 Este módulo permite la emisión de facturas, calculando automáticamente el total del pedido, incluyendo impuestos y descuentos, además de registrar el método de pago utilizado. También almacena un historial de todas las facturas generadas. El acceso a este módulo está restringido exclusivamente al administrador.
 
