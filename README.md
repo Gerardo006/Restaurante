@@ -22,6 +22,15 @@ Como se puede observar en la siguiente imagen:
 ![image](https://github.com/user-attachments/assets/d348ee09-1257-4a91-923f-2888c2429647)
 
 
+# REFERENCIA INTERFAZ:
+
+
+![Captura de pantalla 2025-02-07 005218](https://github.com/user-attachments/assets/a0473caf-4865-404e-b33a-29d25ab6eb3d)
+
+
+para la creacion de la interfaz se baso en un proyecto disponible en la web, la cual nos proporcionaba diferentes estilos de archivos css e imagnes los cuales fueron esenciales para tener una referencia de colores e imagenes que pudieramos utilizar en nuestro proyecto; creando principalmente la pagina de inicio, en la cual a partir de aquella se comenzo a generar las demas vistas para que tengan coherencia de vista y color, con la ayuda de IA se logro crear vistas que posean principios UI, ademas nos proporciono ayuda para ir generando las demas vistas en base a la pagina de inico
+
+
 # MODULOS:
 
 
